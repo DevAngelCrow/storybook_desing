@@ -12,6 +12,7 @@ const meta = {
         description: {
             control: { type: "text" },
         },
+        
     },
 } satisfies Meta<typeof Button>;
 
@@ -22,6 +23,7 @@ export const Primary: Story = {
     args: {
         title: "Button",
         description: "This is a button",
-        className: "bg-red-800"
+        //className: "",
+        label: "Button"
     },
 }

@@ -4,13 +4,19 @@
   "version": "0.0.0",
   "type": "module",
   "types": "dist/index.d.ts",
-  "exports":{
-    ".":{
+  "exports": {
+    ".": {
       "import": "./dist/desing-system-story-book.es.js",
-      "require" : "./dist/desing-system-story-book.umd.js"
+      "require": "./dist/desing-system-story-book.umd.js"
+    },
+    "./styles.css":{
+      "require":"./dist/styles.css",
+      "default":"./dist/styles.css"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build && npm run build:css",
